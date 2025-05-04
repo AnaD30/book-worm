@@ -1,0 +1,8 @@
+<!-- Inside book_list.html or book_detail.html -->
+{% for book in books %}
+    <div>
+        <h3>{{ book.title }}</h3>
+        <img src="{{ book.cover_image.url }}" alt="Cover image for {{ book.title }}" width="100">
+        <p>Author: {{ book.author }}</p>
+    </div>
+{% endfor %}      
